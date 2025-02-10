@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Tela inicial para escolha do quiz -->
+  <div class="quiz-container" id="start-screen">
+    <h2>Escolha um Quiz</h2>
+    <div class="start">
+      <button onclick="startQuiz('nanjoon')">Quiz de Nanjoon</button>
+      <button onclick="startQuiz('foortThitipong')">Quiz de Foort Thitipong</button>
+      <button onclick="startQuiz('bossChaikamon')">Quiz de Boss Chaikamon</button>
+      <button onclick="startQuiz('dylanWang')">Quiz de Dylan Wang</button>
+      <button onclick="startQuiz('laufey')">Quiz de Laufey</button>
+      <button onclick="startQuiz('linManuelMiranda')">Quiz de Lin Manuel Miranda</button>
+    </div>
+  </div>
+
+  <!-- Tela do quiz -->
+  <div class="quiz-container" id="quiz-screen" style="display: none;">
+    <h2 id="quiz-title"></h2>
+    <p class="question" id="question"></p>
+    <div class="options" id="options"></div>
+    <p id="result"></p>
+    <p id="score"></p>
+    <button id="restart" onclick="showStartScreen()" style="display: none;">Recomeçar</button>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
